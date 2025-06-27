@@ -1,0 +1,115 @@
+body {
+    border-radius: 50px;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background: url("/static/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #eee;
+}
+
+.navbar {
+
+  background: rgba(0,0,0,0.85);
+  color: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.navbar p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: rgba(20,20,20,0.85);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+}
+
+#drop-area {
+  border: 2px dashed #888;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#drop-area.highlight {
+  background: rgba(255,255,255,0.1);
+  transform: scale(1.02);
+}
+
+#drop-area p {
+  margin: 0;
+  font-size: 16px;
+  color: #ddd;
+}
+
+button {
+  display: block;             /* make it a block so margins apply */
+  width: 50%;
+  padding: 12px;
+  background: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 20px auto 0 auto;   /* top margin 20px, auto left/right to center */
+  transition: background 0.3s, transform 0.3s;
+}
+
+
+button:hover {
+  background: #45a049;
+  transform: scale(1.03);
+}
+
+
+
+.result-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.result-box h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.predicted-class {
+  display: inline-block;
+  font-size: 28px;        /* Make it bigger */
+  color: #4CAF50;         /* Highlight color (green) */
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+
+.result-box p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
