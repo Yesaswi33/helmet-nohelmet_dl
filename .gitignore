@@ -1,12 +1,16 @@
-# Ignore dataset folder
-data_helmet_nohelmet/
-
-# Ignore virtual environment
+# Ignore virtual environments
 venv/
 
-# Optional: common temp/cache files
-__pycache__/
-*.pyc
+# Ignore datasets
+data_helmet_nohelmet/
+
+# Ignore model files
+saved_models/
+
+# Ignore checkpoints and large notebooks
+*.keras
+*.ipynb_checkpoints/
 *.log
-.ipynb_checkpoints/
+*.pyc
+__pycache__/
 .DS_Store
