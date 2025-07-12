@@ -1,0 +1,12 @@
+# Ignore dataset folder
+data_helmet_nohelmet/
+
+# Ignore virtual environment
+venv/
+
+# Optional: common temp/cache files
+__pycache__/
+*.pyc
+*.log
+.ipynb_checkpoints/
+.DS_Store
